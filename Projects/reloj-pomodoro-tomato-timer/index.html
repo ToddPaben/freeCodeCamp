@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Reloj Pomodoro / Tomato Timer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Pacifico%7CAcme%7CCabin%7CFredoka+One%7CVT323%7CVarela+Round" rel="stylesheet"> 
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <h1 class="text-center" style="color:#007f00">Pomodoro</h1>
+<div class="pomoholder text-center">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-6">
+        <svg width="350" height="350">
+   <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+   <defs>
+
+   </defs>
+   <g id="svg_7">
+     <ellipse id="inner" ry="26.59141" rx="173.47891"  cy="205.72132" cx="174.24306" stroke-width="2" stroke="#000000" fill="#3f3f3f"/>
+     <path id="stem" d="m146.89487,77.44591l35.78654,2.05461l29.26805,-4.146c0,0 -11.92723,-6.72536 -9.04898,-19.83215c3.24583,-12.36234 18.48114,-19.65393 20.06664,-29.98001c-9.44151,0.09624 -19.04182,9.32147 -27.85408,9.81828c4.13043,-19.86838 11.002,-21.94091 11.41319,-34.80158c-12.8212,3.14503 -20.40771,22.97079 -30.83041,29.95474c-7.8497,4.00615 -33.14165,-28.25444 -41.71869,-26.77499c-4.16626,5.01561 16.79584,30.22127 17.90785,38.80927c-8.99603,1.3296 -18.52777,-7.55175 -27.63902,-9.02328c-0.47343,13.78971 29.54277,16.42567 22.64891,43.92111l0,0.00002l0,0l0,-0.00002z" stroke-dasharray="null" stroke-width="0" stroke="#000000" fill="#007f00"/>
+     <path id="bottom" d="m0.3165,208.08562c39.32273,35.96535 327.89303,30.58354 348.29202,-0.57359c-3.56329,37.08955 -7.09781,96.39014 -36.04761,110.66068c-61.00142,37.715 -207.82922,32.76581 -252.27698,10.19324c-34.1086,-14.418 -45.49256,-57.08215 -59.96746,-120.28029l-0.00001,0l0.00002,0l0.00002,0l0,-0.00002l0,-0.00002z" stroke-width="0" stroke="#000000" fill="#ff0000"/>
+     <path id="top" d="m0.90973,200.8891c0,25.09692 342.82739,38.6911 345.92523,-3.13712c3.09784,-41.82817 -5.18631,-105.8913 -53.71918,-124.71401c-68.15245,-20.91408 -80.52052,0.27519 -110.46629,1.32088c-29.9458,1.04572 -79.51117,-15.68557 -131.14182,6.27422c-51.63063,21.9598 -50.59802,95.15912 -50.59802,120.25601l-0.00001,0l0.00001,-0.00003l0.00001,0l0.00001,0l0.00001,0l0.00001,0l0.00001,0l0.00001,0l0.00001,0l0.00001,0.00003l0,0.00002z" stroke-dasharray="null" stroke-width="0" stroke="#000000" fill="#ff0000" />
+     <path id="shine" fill="#ffffff" stroke="#000000" stroke-width="0" stroke-dasharray="null"  d="m266.871,91.02666c15.00095,4.40955 40.43768,23.01664 59.04089,68.78505c-4.04395,-24.40024 -17.21863,-62.5033 -44.90353,-74.15739c-4.22864,-2.37104 -17.9119,1.00389 -14.13736,5.37234l0,0.00002l0,-0.00002z" />
+     
+    </g>
+  </svg>
+        <div id="break"> Break Time
+          <div class="row">
+            <button class="col-xs-4 setTimes" id="breakMore">+</button>
+            <div class="col-xs-4 setTimes" id="breakNum">5</div>
+            <button class="col-xs-4 setTimes" id="breakLess">-</button>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-xs-6">
+        <div id="work">Work Time
+          <div class="row">
+            <button class="col-xs-4 setTimes" id="workMore">+</button>
+            <div class="col-xs-4 setTimes" id="workNum">25</div>
+            <button class="col-xs-4 setTimes" id="workLess">-</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="text-center" id="timeDisplay">
+
+          <button id="startBoton" class="startbutton">START</button><button id="resetter"><span class="glyphicon glyphicon-repeat"></span></button>
+          <div id="theTime" class="theTime" style="margin-top:-.2em">25:00</div>
+          <div id="state" class="state" style="margin-top:-.9em"></div>
+          <div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  <div id="designed">
+    <h5>Designed and coded by <a href="#"> Todd Paben</a>.</h5>
+  </div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

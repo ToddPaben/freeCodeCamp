@@ -1,0 +1,179 @@
+body {
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 8 8"%3E%3Cg fill="%23FF92AF" fill-opacity="0.4"%3E%3Cpath fill-rule="evenodd" d="M0 0h4v4H0V0zm4 4h4v4H4V4z"/%3E%3C/g%3E%3C/svg%3E');
+}
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.pomoholder {
+  width: 350px;
+  margin: 25px auto auto auto; 
+}
+#break {
+  
+  position: absolute;
+  font-family: 'Pacifico', cursive;
+  color: white;
+  font-size: 125%;
+  text-shadow: -1px 1px #3f3f3f;
+  top: 120px;
+  left: 40px;
+  z-index: 12;
+}
+#work {
+  font-family: 'Pacifico', cursive;
+  text-shadow: -1px 1px #3f3f3f;
+  color: white;
+  position: absolute;
+  top: 120px;
+  left: 30px;
+  font-size: 125%;
+  z-index: 12;
+}
+#timeDisplay {
+  position: relative;
+  top: 239px;
+  left: 5px;
+  z-index: 13;
+}
+.setTimes {
+  border: 0px;
+  font-family: 'VT323', monospace;
+  font-size: 200%;
+  text-shadow: 1px 0px 4px white;
+  background-color: rgba(0, 0, 0, 0);
+}
+.theTime {
+  position: relative;
+  color: white;
+  font-family: 'VT323', monospace;
+  font-size: 400%;
+  text-shadow: 0px 0px 20px white;
+  z-index: 18;
+}
+#designed {
+  margin-top: 300px;
+  font-family: 'Pacifico', cursive;
+}
+a:link {
+  color: #990000;
+}
+a:hover {
+  color: #ff6666;
+}
+.startbutton {
+  background: white;
+  padding: 0px 7px;
+  font-family: 'Fredoka One', cursive;
+  text-shadow: 0px 0px 2px red;
+  color: #ff0000;
+  margin-bottom: 0;
+  font-size: 85%;
+  border: 2px solid #ff0000;
+  border-radius: 15px;
+  box-shadow: 0px 0px 0px 2px white, -1px -1px 0px 3px #3f3f3f, 0px 4px 8px #3f3f3f;
+  z-index: 20;
+}
+#resetter {
+  background: white;
+  padding: 0px 5px;
+  color:  #800000;
+  margin-bottom: 0;
+  margin-left: 10px;
+  font-size: 85%;
+  border: 2px solid #800000;
+  border-radius: 15px;
+  box-shadow: 0px 0px 0px 2px white, -1px -1px 0px 3px #3f3f3f, -2px 4px 8px #3f3f3f;
+  z-index: 20;
+}
+.resHighlt {
+  text-shadow: 0px 0px 2px red;
+  color: #ff0000;
+  border: 2px solid #ff0000;
+  
+}
+.state {
+  color: white;
+  font-family: 'VT323', monospace;
+  font-size: 150%;
+  text-shadow: 0px 0px 3px white;
+}
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 600%;
+}
+.front {
+  position: relative;
+  
+}
+.stem-mover {
+  animation: stem-move 60s infinite;
+  animation-play-state: paused;
+}
+
+.darkgreen {
+  
+  animation: colorFlipGreen 2s infinite;
+  animation-play-state: paused;
+}
+.lightGreen{
+  animation: colorFlipLightGreen 2s infinite;
+  animation-play-state: paused;
+}
+.red {
+  animation: colorFlipRed 2s infinite;
+  animation-play-state: paused;
+}
+.lightred {
+  animation: colorFlipLightRed 2s infinite;
+  animation-play-state: paused;
+}
+@keyFrames stem-move{
+  0%{transform: translate(0px, 0px);}
+  1%{transform: translate(0px, 25px);}
+  98%{transform: translate(0px, 10px);}
+  100%{transform: translate(0px, 0px);}
+}
+@keyFrames colorFlipRed{
+  0% {fill: #ff0000;}
+  50% {fill: #ffb3b3;}
+  100% {fill: #ff0000;}
+}
+
+@keyFrames colorFlipLightRed{
+  0% {fill: #ffb3b3;}
+  50% {fill: #ff0000;}
+  100% {fill: #ffb3b3;}
+}
+@keyFrames colorFlipGreen{
+  0% {fill: #39e600}
+  50% {fill: #b3ff99;}
+  100% {fill: #39e600}
+}
+@keyFrames colorFlipLightGreen{
+  0% {fill: #b3ff99;}
+  50% {fill: #39e600}
+  100% {fill: #b3ff99;}
+}
+@keyFrames moveArrow{
+  0%{
+    /*transform: translate(162px, -16px);*/
+    transform-origin: 400px 400px;
+    transform: rotateY(-89deg);
+    
+  }
+  33%{
+    /*transform: translate(107px, -3px);*/
+    transform-origin: 400px 400px;
+    transform: rotateY(-30deg);
+  }
+  100%{
+    /*transform: translate(0px, 0px);*/
+    transform-origin: 400px 400px;
+    transform: rotateY(0deg);
+  }
+}
+
+

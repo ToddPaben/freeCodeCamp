@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Stranger Numbers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Orbitron%7CRaleway" rel="stylesheet"> 
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <canvas></canvas>
+  <div class="outer" id="border">
+    <div id="shader">
+      <div class="screen" id="screen">
+        <h5 id="subtot" style="margin-bottom:0em"></h5>
+        <h3 id="disp" style="margin-top:.1em">0</h3>
+        <h5 id="mensaje" style="margin-bottom:0em"></h5>
+      </div>
+      <div class="plate" id="plato">
+        <div class="emblemArea linedUp" style="padding-top:5px">
+          <div id="hache" class="hache linedUp"></div>
+          <div id="en" class="en linedUp"></div>
+          <div id="el" class="el linedUp"></div>
+        </div>
+        <div class="nameArea linedUp">
+          <div class="logo" id="logo">
+            <small><small>HAWKINS NATIONAL LABORATORY 
+        <br>U.S. DEPARTMENT OF ENERGY</small></small>
+          </div>
+        </div>
+
+        <div class="container-fluid text-center" style="padding-right:20px">
+          <div class="row">
+            <div class="col-xs-3">
+              <div class="tanbutt" id="clentry" style="font-size:100%; padding-top: 10px">CE</div>
+            </div>
+            <div class="col-xs-3">
+              <div class="tanbutt" id="divide">&#247;</div>
+            </div>
+            <div class="col-xs-3">
+              <div class="tanbutt" id="times">X</div>
+            </div>
+            <div class="col-xs-3">
+              <div class="tanbutt" id="allClear">C</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-3">
+              <div class="whitebutt" id="seven">7</div>
+            </div>
+            <div class="col-xs-3">
+              <div class="whitebutt" id="eight">8</div>
+            </div>
+            <div class="col-xs-3">
+              <div class="whitebutt" id="nine">9</div>
+            </div>
+            <div class="col-xs-3">
+              <div class="tanbutt" id="minus">-</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-3">
+              <div class="whitebutt" id="four">4</div>
+            </div>
+            <div class="col-xs-3">
+              <div class="whitebutt" id="five">5</div>
+            </div>
+            <div class="col-xs-3">
+              <div class="whitebutt" id="six">6</div>
+            </div>
+            <div class="col-xs-3">
+              <div class="tanbutt" id="plus">+</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-3">
+              <div class="whitebutt" id="one">1</div>
+            </div>
+            <div class="col-xs-3">
+              <div class="whitebutt" id="two">2</div>
+            </div>
+            <div class="col-xs-3">
+              <div class="whitebutt" id="three">3</div>
+            </div>
+            <div class="col-xs-3">
+              <div class="tanbutt" id="dot">.</div>
+            </div>
+          </div>
+          <div class="row">
+            <div id="eleven" class="redbutt" style="float: left">011</div>
+            <div class="whitebutt" style="float: left" id="zero">0</div>
+            <div id="equals" class="orgbutt" style="float: left">=</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="text-center" style="margin-top:10px"><p style="color:red"><strong>Designed and coded by <a href="http://toddpaben.com/index.html" target="_blank">Todd Paben</a></strong></p></div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>

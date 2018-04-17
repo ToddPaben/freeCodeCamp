@@ -1,0 +1,71 @@
+#fBox {
+  border-radius: 0px 10px 10px 0px;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  
+  font-family: 'Passion One', cursive;
+  font-size: 125%;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.0);
+}
+#cBox {
+  border-radius: 0px 10px 10px 0px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.0);
+  padding: 10px;
+  
+  font-family: 'Passion One', cursive;
+  font-size: 125%;
+}
+#tempbox {
+  border-radius: 10px 0px 10px 10px;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+#temp {
+  font-family: 'Passion One', cursive;
+  font-size: 550%;
+}
+#condit {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  font-family: 'Passion One', cursive;
+  font-size: 125%;
+  height: 100px;
+}
+#windy {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 25px 10px 10px 10px;
+  font-family: 'Passion One', cursive;
+  font-size: 125%;
+  height: 100px;
+}
+#humy {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 25px 10px 10px 10px;
+  font-family: 'Passion One', cursive;
+  font-size: 125%;
+  height: 100px;
+  
+}
+.well {
+  background-repeat: no-repeat;
+}
+.panel {
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.5);
+}
+#author {
+  font-family: 'Amatic SC', cursive;  
+  text-shadow: 2px 2px 2px White, -2px -2px 2px White;
+}
+#titul {
+  font-family: 'Amatic SC', cursive;  
+  text-shadow: 1px 1px 2px White, -1px -1px 2px White;
+}
+#seper {
+  height: 10px;
+}
